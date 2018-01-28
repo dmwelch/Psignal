@@ -151,6 +151,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1139076624041834, guid: 8d1e05b0098b1de459daf9a900185243, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d1e05b0098b1de459daf9a900185243, type: 2}
   m_IsPrefabParent: 0
@@ -666,6 +670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b7f00715eded549861363b34d0d900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amplitude: 0
+  strength: 0
 --- !u!1001 &2026483237
 Prefab:
   m_ObjectHideFlags: 0
@@ -749,3 +755,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b7f00715eded549861363b34d0d900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amplitude: 0
+  strength: 0

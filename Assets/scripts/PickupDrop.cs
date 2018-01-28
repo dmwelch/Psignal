@@ -13,8 +13,7 @@ public class PickupDrop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Physics.Raycast (transform.position, transform.forward, pickupDistance)) {
-			Debug.Log("Looking at Something");
-		}
+		
+		
 	}
 }
