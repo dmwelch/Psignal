@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8099a9651fbaf448e7da7c04ef454d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destination: LevelSelectScene
 --- !u!4 &401760973
 Transform:
   m_ObjectHideFlags: 0

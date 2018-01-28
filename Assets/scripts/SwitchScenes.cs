@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScenes : MonoBehaviour {
 
+	public string destination;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +15,7 @@ public class SwitchScenes : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			SceneManager.LoadScene ("LevelSelectScene");
+			SceneManager.LoadScene (destination);
 		}
 	}
 }

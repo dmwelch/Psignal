@@ -17,7 +17,13 @@ public class CollisionSceneChanger : MonoBehaviour {
 		
 	}
 
-	private void OnCollisionEnter() {
+	void OnColliderEnter2D(Collider2D collider) {
+		
+		SceneManager.LoadScene (destination);
+
+	}
+
+	void OnTriggerEnter2D(Collider2D collider) {
 		SceneManager.LoadScene (destination);
 	}
 }
