@@ -5,6 +5,7 @@ using UnityEngine;
 public class EmitterBehavior : MonoBehaviour {
 
 	public float amplitude;
+	public int frequency;
 	public int strength;
 
 	// Use this for initialization
@@ -17,7 +18,7 @@ public class EmitterBehavior : MonoBehaviour {
 		float totalDistance = 0;
 		foreach (GameObject emitter in GameObject.FindGameObjectsWithTag("Emitter")) {
 			if (emitter != gameObject) {
-				float aDistance = Distance (gameObject, emitter);
+				float aDistance = EuclideanDistance (gameObject, emitter);
 				totalDistance += aDistance;
 			}
 		}
@@ -28,7 +29,7 @@ public class EmitterBehavior : MonoBehaviour {
 		return amplitude;
 	}
 
-	float Distance(GameObject thisObject, GameObject anotherObject) {
+	float EuclideanDistance(GameObject thisObject, GameObject anotherObject) {
 		return 
 			Mathf.Sqrt (
 				Mathf.Pow(
